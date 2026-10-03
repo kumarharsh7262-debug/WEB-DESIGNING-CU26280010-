@@ -1,0 +1,865 @@
+<!-- 01 -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basic Form</title>
+</head>
+<body>
+
+<h2>HTML Form</h2>
+
+<form>
+    Name:
+    <input type="text" placeholder="Enter name">
+    <br><br>
+
+    Password:
+    <input type="password" placeholder="Password">
+    <br><br>
+
+    Gender:
+    <input type="radio" name="gender"> Male
+    <input type="radio" name="gender"> Female
+    <br><br>
+
+    Hobbies:
+    <input type="checkbox"> Music
+    <input type="checkbox"> Sports
+    <br><br>
+
+    Course:
+    <select>
+        <option>MCA</option>
+        <option>BCA</option>
+        <option>BBA</option>
+    </select>
+    <br><br>
+
+    Address:
+    <br>
+    <textarea placeholder="Enter address"></textarea>
+    <br><br>
+
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
+<hr>
+
+
+<!-- 02 -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration</title>
+</head>
+<body>
+
+<h2>Student Registration Form</h2>
+
+<form>
+
+    <label>Name</label><br>
+    <input type="text" placeholder="Enter name" required>
+    <br><br>
+
+    <label>Email</label><br>
+    <input type="email" placeholder="student@example.com" required>
+    <br><br>
+
+    <label>Phone</label><br>
+    <input type="tel" placeholder="10-digit number"
+           pattern="[0-9]{10}" required>
+    <br><br>
+
+    <label>Username</label><br>
+    <input type="text" placeholder="Username" required>
+    <br><br>
+
+    <label>Password</label><br>
+    <input type="password" required>
+    <br><br>
+
+    <input type="submit" value="Register">
+
+</form>
+
+</body>
+</html>
+<hr>
+
+
+
+<!-- 3 -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multi Column Layout</title>
+
+    <style>
+        .container {
+            display: flex;
+            gap: 10px;
+        }
+
+        .box {
+            border: 1px solid black;
+            padding: 20px;
+            width: 33%;
+        }
+
+        h3 {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>Multi Column Layout</h2>
+
+<div class="container">
+
+    <div class="box">
+        <h3>Header</h3>
+        <p>Navigation</p>
+        <p>Home</p>
+        <p>About</p>
+    </div>
+
+    <div class="box">
+        <h3>Content</h3>
+        <p>Welcome to the website.</p>
+        <p>This is the main content.</p>
+    </div>
+
+    <div class="box">
+        <h3>My Website</h3>
+        <p>Footer</p>
+        <p>Contact</p>
+    </div>
+
+</div>
+
+</body>
+</html>
+<hr>
+
+
+<!-- 4 -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flexbox Layout</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        .header {
+            background-color: lightblue;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .main {
+            display: flex;
+        }
+
+        .menu {
+            width: 25%;
+            background-color: lightgray;
+            padding: 20px;
+        }
+
+        .content {
+            width: 75%;
+            padding: 20px;
+        }
+
+        .footer {
+            background-color: lightblue;
+            padding: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="header">
+    <h2>My Website</h2>
+</div>
+
+<div class="main">
+
+    <div class="menu">
+        <h3>Menu</h3>
+        <p>Home</p>
+        <p>About</p>
+        <p>Contact</p>
+    </div>
+
+    <div class="content">
+        <h3>Content</h3>
+        <p>Welcome to the page.</p>
+    </div>
+
+</div>
+
+<div class="footer">
+    <p>My Website</p>
+</div>
+
+</body>
+</html>
+<hr>
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+input, textarea {
+  padding: 8px;
+  margin: 5px;
+  border: 2px solid gray;
+}
+
+input:focus, textarea:focus {
+  border-color: blue;
+  background-color: lightblue;
+  outline: none;
+}
+</style>
+</head>
+<body>
+
+<h3>Feedback Form</h3>
+
+<form>
+  Name: <input type="text"><br>
+  Email: <input type="email"><br>
+  Feedback:<br>
+  <textarea rows="4"></textarea><br>
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
+
+
+
+
+<!-- 5 -->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+  margin:0;
+  background:#eee;
+}
+.card{
+  width:250px;
+  padding:20px;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  box-shadow:0 0 10px gray;
+  border-radius:10px;
+  text-align:center;
+  background:white;
+}
+input{
+  width:90%;
+  padding:8px;
+  margin:8px;
+}
+button{
+  padding:8px 20px;
+}
+</style>
+</head>
+<body>
+
+<div class="card">
+  <h2>Login</h2>
+  <input type="text" placeholder="Username">
+  <input type="password" placeholder="Password">
+  <br>
+  <button>Login</button>
+</div>
+
+</body>
+</html>
+<hr> -->
+
+
+
+<!-- 6 -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Grid</title>
+
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        .box {
+            border: 1px solid black;
+            padding: 20px;
+        }
+
+        h3 {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>Two Column Layout</h2>
+
+<div class="container">
+
+    <div class="box">
+        <h3>First Column</h3>
+
+        <input type="text" placeholder="First Name">
+        <br><br>
+
+        <input type="text" placeholder="Last Name">
+        <br><br>
+
+        <input type="email" placeholder="Email">
+    </div>
+
+    <div class="box">
+        <h3>Second Column</h3>
+
+        <input type="text" placeholder="Phone">
+        <br><br>
+
+        <textarea placeholder="Address"></textarea>
+        <br><br>
+
+        <button>Submit</button>
+    </div>
+
+</div>
+
+</body>
+</html>
+<hr>
+
+
+
+<!-- 7 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+input, textarea {
+  padding: 8px;
+  margin: 5px;
+  border: 2px solid gray;
+}
+
+input:focus, textarea:focus {
+  border-color: blue;
+  background-color: lightblue;
+  outline: none;
+}
+</style>
+</head>
+<body>
+
+<h3>Feedback Form</h3>
+
+<form>
+  Name: <input type="text"><br>
+  Email: <input type="email"><br>
+  Feedback:<br>
+  <textarea rows="4"></textarea><br>
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
+<hr>
+
+
+<!-- 8 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+button {
+  padding: 10px 20px;
+  background: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: green;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+</style>
+</head>
+<body>
+
+<h3>File Upload Form</h3>
+
+<form>
+  Select File:
+  <input type="file"><br><br>
+  <button type="submit">Upload</button>
+</form>
+
+</body>
+</html>
+<hr>
+
+
+<!-- 9 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 9 -->
+ <!DOCTYPE html>
+<html>
+<head>
+<style>
+button {
+  padding: 10px 20px;
+  background: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: green;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+</style>
+</head>
+<body>
+
+<h3>File Upload Form</h3>
+
+<form>
+  Select File:
+  <input type="file"><br><br>
+  <button type="submit">Upload</button>
+</form>
+
+</body>
+</html>
+<hr>
+
+
+<!-- 10 -->
+<style>
+table{border-collapse:collapse}
+td,th{border:1px solid;padding:8px}
+tr:hover{background:#ddd}
+</style>
+
+<table>
+<tr><th>Name</th><th>Age</th><th>Course</th></tr>
+<tr><td>Rahul</td><td>21</td><td>MCA</td></tr>
+<tr><td>Amit</td><td>22</td><td>MCA</td></tr>
+<tr><td>Neha</td><td>21</td><td>BCA</td></tr>
+</table>
+
+
+<!-- 11 -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    input { border: 2px solid blue; }
+  </style>
+</head>
+<body>
+
+<div class="form">
+  <h2>Contact Us</h2>
+  <input type="text" placeholder="Name" style="border:2px solid red;">
+  <input type="email" placeholder="Email">
+  <textarea placeholder="Message"></textarea>
+  <button>Send</button>
+</div>
+
+</body>
+</html>
+<hr>
+
+
+
+<!-- 12 -->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.form{
+  width:400px;
+  margin:30px auto;
+  padding:20px;
+  box-shadow:0 0 8px gray;
+}
+input{
+  width:90%;
+  padding:10px;
+  margin:6px;
+}
+button{
+  padding:10px 20px;
+}
+@media(max-width:600px){
+  .form{width:85%;}
+  input{width:90%;}
+}
+</style>
+</head>
+<body>
+
+<div class="form">
+  <h2>Payment Checkout</h2>
+  <input type="text" placeholder="Card Holder Name">
+  <input type="text" placeholder="Card Number">
+  <input type="text" placeholder="Expiry Date">
+  <input type="password" placeholder="CVV">
+  <button>Pay Now</button>
+</div>
+
+</body>
+</html>
+<hr>
+
+
+<!-- 13 -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Checkbox and Radio</title>
+
+    <style>
+        .box {
+            width: 350px;
+            border: 1px solid #ccc;          padding: 15px;
+            font-family: Arial;
+        }
+
+        input[type="checkbox"],
+        input[type="radio"] {
+            accent-color: #555;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="box">
+
+    <label>
+        <input type="checkbox">
+        Accept Terms
+    </label>
+
+    <br>
+
+    <label>
+        <input type="radio" name="gender">
+        Male
+    </label>
+
+    <br>
+
+    <label>
+        <input type="radio" name="gender">
+        Female
+    </label>
+
+</div>
+
+</body>
+</html>
+<hr>
+
+
+<!-- 15 -->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.search{
+  width:150px;
+  padding:10px;
+  transition:width 0.5s;
+}
+.search:focus{
+  width:300px;
+}
+</style>
+</head>
+<body>
+
+<input class="search" type="search" placeholder="Search here...">
+
+</body>
+</html>
+<hr>
+
+
+<!-- 16 -->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+form {
+  width: 450px;
+  margin: auto;
+  padding: 15px;
+  border: 1px solid gray;
+}
+
+label {
+  width: 120px;
+  float: left;
+  margin-bottom: 10px;
+}
+
+input, select {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.clear {
+  clear: both;
+}
+
+textarea {
+  width: 90%;
+}
+</style>
+</head>
+<body>
+
+<form>
+  <h3>Employee Evaluation</h3>
+
+  <label>Name:</label>
+  <input type="text"><br>
+
+  <label>Department:</label>
+  <select>
+    <option>IT</option>
+    <option>HR</option>
+    <option>Sales</option>
+  </select><br>
+
+  <label>Performance:</label>
+  <select>
+    <option>Excellent</option>
+    <option>Good</option>
+    <option>Average</option>
+  </select>
+
+  <div class="clear"></div>
+
+  <label>Comments:</label>
+  <textarea rows="4"></textarea><br>
+
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
+<hr>
+
+<!-- 17 -->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3>Hidden Input Form</h3>
+
+<form>
+  Name:
+  <input type="text" name="name"><br><br>
+
+  <input type="hidden" name="session_id" value="ABC123">
+
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
+<hr>
+
+
+<!-- 18 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.box {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid gray;
+}
+
+input, textarea {
+  width: 90%;
+  padding: 8px;
+  margin: 5px;
+}
+</style>
+</head>
+<body>
+
+<h2>Contact Us</h2>
+
+<div class="container">
+
+  <div class="box">
+    <h3>Contact Form</h3>
+    <input type="text" placeholder="Name"><br>
+    <input type="email" placeholder="Email"><br>
+    <textarea rows="4" placeholder="Message"></textarea><br>
+    <input type="submit" value="Send">
+  </div>
+
+</div>
+
+</body>
+</html>
+
+
+
+
+<!-- 19 -->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+label{
+font-weight:bold;
+font-family:Arial;
+}
+
+input::placeholder{
+font-style:italic;
+letter-spacing:1px;
+}
+</style>
+</head>
+<body>
+
+<label>Name:</label><br>
+<input placeholder="Enter Your Name"><br><br>
+
+<label>Email:</label><br>
+<input placeholder="Enter Your Email"><br><br>
+
+<label>Course:</label><br>
+<input placeholder="Enter Course">
+
+</body>
+</html>
+<hr>
+
+<!-- 21 -->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3>Accessible Form</h3>
+
+<form>
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name"><br><br>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email"><br><br>
+
+  <label for="age">Age:</label>
+  <input type="number" id="age" name="age"><br><br>
+
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
+
+
+
+<!-- 22 -->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.box{position:relative;margin:20px;}
+label{
+position:absolute;
+left:5px;
+top:5px;
+transition:0.3s;
+}
+input:focus+label,
+input:valid+label{
+top:-15px;
+font-size:12px;
+}
+</style>
+</head>
+<body>
+
+<div class="box">
+<input type="email" required>
+<label>Email Address</label>
+</div>
+
+</body>
+</html>
+
+
+
