@@ -1,0 +1,510 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num1 = prompt("Enter first number:");
+        let num2 = prompt("Enter second number:");
+
+        num1 = Number(num1);
+        num2 = Number(num2);
+
+        let sum = num1 + num2;
+
+        console.log("Sum =", num1+num2);
+        alert("Addition ="+sum);
+
+    </script>
+</body>
+</html>
+<hr> 
+
+
+<!-- 2 -->
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<input type="number" id="num" placeholder="Enter number">
+<button onclick="check()">Check</button>
+<div id="result"></div>
+
+<script>
+function check() {
+  let n = Number(document.getElementById("num").value);
+  let prime = n > 1;
+
+  for (let i = 2; i < n; i++)
+    if (n % i == 0) prime = false;
+
+  document.getElementById("result").innerHTML =
+    n > 1 ? (prime ? "Prime Number" : "Composite Number") : "Neither Prime nor Composite";
+}
+</script>
+
+</body>
+</html> -->
+
+
+<!-- 3 -->
+<!-- 
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3>Student Grade</h3>
+<div id="result"></div>
+
+<script>
+let marks = Number(prompt("Enter marks:"));
+let grade;
+
+if (marks >= 90) grade = "A";
+else if (marks >= 75) grade = "B";
+else if (marks >= 50) grade = "C";
+else grade = "F";
+
+switch(grade) {
+  case "A": grade = "A"; break;
+  case "B": grade = "B"; break;
+  case "C": grade = "C"; break;
+  case "F": grade = "F"; break;
+}
+
+document.getElementById("result").innerHTML = "Grade: " + grade;
+</script>
+
+</body>
+</html> -->
+
+
+<!-- 4 -->
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<input type="number" id="n" placeholder="Enter terms">
+<button onclick="fibo()">Generate</button>
+<div id="result"></div>
+
+<script>
+function fibo() {
+  let n = Number(document.getElementById("n").value);
+  let a = 0, b = 1, s = "";
+
+  for (let i = 1; i <= n; i++) {
+    s += a + " ";
+    let c = a + b;
+    a = b;
+    b = c;
+  }
+
+  document.getElementById("result").innerHTML = s;
+}
+</script>
+
+</body>
+</html> -->
+
+
+<!-- 5 -->
+
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+function palindrome(str) {
+    let rev = str.split("").reverse().join("");
+    if (str == rev)
+        document.write("Palindrome");
+    else
+        document.write("Not Palindrome");
+}
+palindrome(prompt("Enter a string:"));
+</script>
+</body>
+</html>
+
+
+<!-- 6 -->
+
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+let arr = [5, 2, 8, 1];
+
+arr.push(10);
+document.write("After Add: " + arr + "<br>");
+
+arr.pop();
+document.write("After Remove: " + arr + "<br>");
+
+arr.sort();
+document.write("After Sort: " + arr + "<br>");
+
+let doubled = arr.map(x => x * 2);
+document.write("After Map: " + doubled + "<br>");
+
+let filtered = arr.filter(x => x > 3);
+document.write("After Filter: " + filtered);
+</script>
+</body>
+</html>
+
+
+
+
+
+<!-- 7 --
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+let student = {
+    name: "Rahul",
+    marks: 85,
+    display: function() {
+        document.write("Name: " + this.name + "<br>");
+        document.write("Marks: " + this.marks);
+    }
+};
+student.display();
+</script>
+</body>
+</html>
+
+
+<!-- 8 -->
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<h3>Calculator</h3>
+<input id="a" type="number" placeholder="First number">
+<input id="b" type="number" placeholder="Second number">
+<br><br>
+<button id="add">+</button>
+<button id="sub">-</button>
+<button id="mul">*</button>
+<button id="div">/</button>
+<p id="result">Result: </p>
+
+<script>
+let a = document.getElementById("a");
+let b = document.getElementById("b");
+let r = document.getElementById("result");
+
+function calculate(op) {
+    let x = Number(a.value);
+    let y = Number(b.value);
+    let ans;
+
+    if (op == "+") ans = x + y;
+    else if (op == "-") ans = x - y;
+    else if (op == "*") ans = x * y;
+    else if (op == "/")
+        ans = y != 0 ? x / y : "Cannot divide by zero";
+
+    r.innerHTML = "Result: " + ans;
+}
+
+document.getElementById("add").addEventListener("click", () => calculate("+"));
+document.getElementById("sub").addEventListener("click", () => calculate("-"));
+document.getElementById("mul").addEventListener("click", () => calculate("*"));
+document.getElementById("div").addEventListener("click", () => calculate("/"));
+</script>
+</body>
+</html>
+
+
+<!-- 9 -->
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<input id="txt" placeholder="Enter text">
+<button onclick="add()">Add</button>
+<ul id="list"></ul>
+
+<script>
+function add() {
+    let text = document.getElementById("txt").value;
+    let li = document.createElement("li");
+    li.innerHTML = text;
+    document.getElementById("list").appendChild(li);
+}
+</script>
+</body>
+</html>
+
+
+<!-- 10-->
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<h3>Password Validation</h3>
+
+<form onsubmit="return check()">
+<input type="password" id="pass" placeholder="Password" required>
+<br><br>
+<input type="password" id="confirm" placeholder="Confirm Password" required>
+<p id="msg"></p>
+<button type="submit">Submit</button>
+</form>
+
+<script>
+let p = document.getElementById("pass");
+let c = document.getElementById("confirm");
+let msg = document.getElementById("msg");
+
+function validate() {
+    if (p.value == c.value) {
+        msg.innerHTML = "Passwords match";
+    } else {
+        msg.innerHTML = "Passwords do not match";
+    }
+}
+
+p.addEventListener("input", validate);
+c.addEventListener("input", validate);
+
+function check() {
+    if (p.value != c.value) {
+        alert("Passwords do not match!");
+        return false;
+    }
+    alert("Form submitted successfully!");
+    return true;
+}
+</script>
+</body>
+</html>
+
+<!-- 12 -->
+
+<!DOCTYPE html>
+<html>
+<body>
+<h2 id="clock"></h2>
+
+<script>
+function showTime() {
+  let d = new Date();
+  document.getElementById("clock").innerHTML =
+    d.toLocaleTimeString();
+}
+setInterval(showTime, 1000);
+showTime();
+</script>
+</body>
+</html>
+
+
+<!-- 13 -->
+
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+function counter() {
+  let count = 0;
+
+  return {
+    increment: function() {
+      return ++count;
+    },
+    decrement: function() {
+      return --count;
+    }
+  };
+}
+
+let c = counter();
+document.write(c.increment() + "<br>");
+document.write(c.increment() + "<br>");
+document.write(c.decrement());
+</script>
+</body>
+</html>
+
+
+
+<!-- 14 -->
+
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+try {
+  let data = JSON.parse('{"name":"Rahul"}');
+  document.write(data.name + "<br>");
+} catch (error) {
+  document.write("Invalid JSON<br>");
+} finally {
+  document.write("Program completed");
+}
+</script>
+</body>
+</html>
+
+
+
+<!-- 15 -->
+
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+let student = {name: "Rahul", marks: 85};
+let {name, marks} = student;
+
+let result = (m) => m >= 40 ? "Pass" : "Fail";
+
+document.write(`Name: ${name}<br>`);
+document.write(`Marks: ${marks}<br>`);
+document.write(`Result: ${result(marks)}`);
+</script>
+</body>
+</html>
+
+
+
+<!-- 16 -->
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<img id="pic" src="https://placehold.co/200x120?text=Image+1"
+width="200">
+<br>
+<button onclick="prev()">Previous</button>
+<button onclick="next()">Next</button>
+
+<script>
+let images = [
+  "https://placehold.co/200x120?text=Image+1",
+  "https://placehold.co/200x120?text=Image+2",
+  "https://placehold.co/200x120?text=Image+3"
+];
+let i = 0;
+
+function next() {
+  i = (i + 1) % images.length;
+  document.getElementById("pic").src = images[i];
+}
+
+function prev() {
+  i = (i - 1 + images.length) % images.length;
+  document.getElementById("pic").src = images[i];
+}
+</script>
+</body>
+</html>
+
+
+<!-- 17 -->
+
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+let str = "Hello World";
+let count = 0;
+
+for (let ch of str.toLowerCase()) {
+  if ("aeiou".includes(ch))
+    count++;
+}
+
+document.write("Total vowels: " + count);
+</script>
+</body>
+</html>
+
+
+<!-- 19 -->
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="out">Press any key</p>
+<script>
+document.addEventListener("keydown", function(e) {
+  document.getElementById("out").innerHTML =
+  "Key: " + e.key + "<br>Key Code: " + e.keyCode;
+});
+document.addEventListener("keyup", function() {
+  document.title = "Key Released";
+});
+</script>
+</body>
+</html>
+
+
+<!-- 20 -->
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<input id="r" type="number" placeholder="Rows">
+<input id="c" type="number" placeholder="Columns">
+<button onclick="createTable()">Create</button>
+<div id="out"></div>
+
+<script>
+function createTable() {
+  let r = +document.getElementById("r").value;
+  let c = +document.getElementById("c").value;
+  let s = "<table border='1'>";
+
+  for (let i = 1; i <= r; i++) {
+    s += "<tr>";
+    for (let j = 1; j <= c; j++)
+      s += "<td>Cell</td>";
+    s += "</tr>";
+  }
+
+  document.getElementById("out").innerHTML = s + "</table>";
+}
+</script>
+</body>
+</html>
+
+
+<!-- 21 -->
+
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+function greet(callback) {
+  setTimeout(function() {
+    document.write("Hello!<br>");
+    callback();
+  }, 2000);
+}
+
+function message() {
+  document.write("Welcome to JavaScript");
+}
+
+greet(message);
+document.write("Please wait...<br>");
+</script>
+</body>
+</html>
