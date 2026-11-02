@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Alex Carter Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">Alex<span>.dev</span></a>
+      <nav id="nav" aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">&#127769;</button>
+      <button id="hamburger" class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero page-hero">
+      <div class="container">
+        <h1>Contact Me</h1>
+        <h2>Let's build something great together</h2>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-wrap">
+        <article class="contact-info">
+          <h2>Get In Touch</h2>
+          <p>Have a project in mind or just want to say hello? Fill in the form and I'll get back to you soon.</p>
+          <p><strong>Email:</strong> hello@alexcarter.dev</p>
+          <p><strong>Location:</strong> Remote, worldwide</p>
+          <p><strong>Availability:</strong> Mon to Fri, 9am to 6pm</p>
+        </article>
+
+        <!-- Task 6: Validated contact form -->
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your full name">
+            <span class="error-msg"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com">
+            <span class="error-msg"></span>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..."></textarea>
+            <span class="error-msg"></span>
+          </div>
+          <button type="submit" class="btn">Send Message</button>
+          <div class="form-success" id="formSuccess" role="status"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <button id="backToTop" aria-label="Back to top">&#8593;</button>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>&copy; 2026 Alex Carter. All rights reserved.</p>
+      <div class="social">
+        <a href="https://github.com" aria-label="GitHub" target="_blank" rel="noopener">Gh</a>
+        <a href="https://linkedin.com" aria-label="LinkedIn" target="_blank" rel="noopener">in</a>
+        <a href="https://twitter.com" aria-label="Twitter" target="_blank" rel="noopener">X</a>
+        <a href="https://instagram.com" aria-label="Instagram" target="_blank" rel="noopener">Ig</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

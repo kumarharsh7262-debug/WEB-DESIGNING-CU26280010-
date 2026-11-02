@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Vashu Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">Vashu<span>.dev</span></a>
+      <nav id="nav" aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">&#127769;</button>
+      <button id="hamburger" class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Task 3: Hero banner -->
+    <section class="hero" id="top">
+      <div class="container">
+        <h1>Hi, I'm Vashu</h1>
+        <h2>Front-End Developer &amp; UI Designer</h2>
+        <p>I craft fast, accessible and beautiful websites using semantic HTML, modern CSS and clean JavaScript.</p>
+        <div class="hero-actions">
+          <a href="projects.html" class="btn">View My Work</a>
+          <button class="btn outline" data-open-modal>Hire Me</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Task 9: smooth scroll links -->
+    <div class="quick-links">
+      <a href="#features">Features</a>
+      <a href="#stats">Stats</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#faq">FAQ</a>
+    </div>
+
+    <!-- Task 16: Feature grid -->
+    <section class="section" id="features">
+      <div class="container">
+        <h2 class="section-title">What I Offer</h2>
+        <p class="section-sub">Everything you need to take a product from idea to a polished launch.</p>
+        <div class="features">
+          <article class="feature">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            <h3>Clean Code</h3>
+            <p>Semantic, maintainable markup and well-structured stylesheets.</p>
+          </article>
+          <article class="feature">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2"/><line x1="11" y1="18" x2="13" y2="18"/></svg>
+            <h3>Responsive Design</h3>
+            <p>Layouts that adapt smoothly from phones to wide desktop screens.</p>
+          </article>
+          <article class="feature">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            <h3>Fast Performance</h3>
+            <p>Lightweight pages that load quickly and feel instant to use.</p>
+          </article>
+          <article class="feature">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+            <h3>Friendly UX</h3>
+            <p>Interfaces focused on accessibility and delightful interactions.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Task 15: Stats counter -->
+    <section class="section alt" id="stats">
+      <div class="container stats">
+        <div class="stat"><div class="num" data-target="120" data-suffix="+">0</div><p>Projects Completed</p></div>
+        <div class="stat"><div class="num" data-target="85" data-suffix="+">0</div><p>Happy Clients</p></div>
+        <div class="stat"><div class="num" data-target="6" data-suffix="">0</div><p>Years Experience</p></div>
+        <div class="stat"><div class="num" data-target="24" data-suffix="">0</div><p>Awards Won</p></div>
+      </div>
+    </section>
+
+    <!-- Task 8: Pricing table -->
+    <section class="section" id="pricing">
+      <div class="container">
+        <h2 class="section-title">Pricing Plans</h2>
+        <p class="section-sub">Simple, transparent pricing for every stage of your project.</p>
+        <div class="pricing">
+          <article class="price-card">
+            <h3>Starter</h3>
+            <div class="price">$199<small>/project</small></div>
+            <ul><li>1 landing page</li><li>Responsive layout</li><li>Basic SEO</li><li>1 revision</li></ul>
+            <button class="btn outline dark" data-open-modal>Choose Plan</button>
+          </article>
+          <article class="price-card popular">
+            <span class="badge">Most Popular</span>
+            <h3>Professional</h3>
+            <div class="price">$499<small>/project</small></div>
+            <ul><li>Up to 5 pages</li><li>Dark mode &amp; animations</li><li>Contact form setup</li><li>3 revisions</li></ul>
+            <button class="btn" data-open-modal>Choose Plan</button>
+          </article>
+          <article class="price-card">
+            <h3>Enterprise</h3>
+            <div class="price">$999<small>/project</small></div>
+            <ul><li>Unlimited pages</li><li>Custom components</li><li>Performance audit</li><li>Priority support</li></ul>
+            <button class="btn outline dark" data-open-modal>Choose Plan</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Task 11: Testimonials carousel -->
+    <section class="section alt" id="testimonials">
+      <div class="container">
+        <h2 class="section-title">What Clients Say</h2>
+        <p class="section-sub">Kind words from people I've worked with.</p>
+        <div class="carousel">
+          <div class="testimonial-box" id="testimonialBox">
+            <blockquote></blockquote>
+            <cite></cite>
+          </div>
+          <div class="carousel-controls">
+            <button id="prevT" aria-label="Previous testimonial">&#10094;</button>
+            <div class="dots" id="dots"></div>
+            <button id="nextT" aria-label="Next testimonial">&#10095;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Task 10: FAQ accordion -->
+    <section class="section" id="faq">
+      <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-sub">Quick answers to common questions.</p>
+        <div class="faq">
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">How long does a typical project take?</button>
+            <div class="faq-answer"><p>Most small websites are delivered within 2 to 4 weeks, depending on scope and feedback speed.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">Do you work with existing designs?</button>
+            <div class="faq-answer"><p>Yes. I can turn Figma or other mockups into pixel-accurate, responsive pages.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">Will my website work on mobile devices?</button>
+            <div class="faq-answer"><p>Absolutely. Every site I build is tested on mobile, tablet and desktop viewports.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">Do you offer support after launch?</button>
+            <div class="faq-answer"><p>Yes, all plans include a support window for fixes, and ongoing maintenance is available.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Task 17: Modal -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <h3 id="modalTitle">Let's Work Together</h3>
+      <p>I'd love to hear about your project. Send me a message and I'll reply within 24 hours.</p>
+      <a href="contact.html" class="btn">Go to Contact Page</a>
+    </div>
+  </div>
+
+  <button id="backToTop" aria-label="Back to top">&#8593;</button>
+
+  <!-- Task 12: Footer -->
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>&copy; 2026 Vashu. All rights reserved.</p>
+      <div class="social">
+        <a href="https://github.com" aria-label="GitHub" target="_blank" rel="noopener">Gh</a>
+        <a href="https://linkedin.com" aria-label="LinkedIn" target="_blank" rel="noopener">in</a>
+        <a href="https://twitter.com" aria-label="Twitter" target="_blank" rel="noopener">X</a>
+        <a href="https://instagram.com" aria-label="Instagram" target="_blank" rel="noopener">Ig</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

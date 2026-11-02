@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Alex Carter Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">Alex<span>.dev</span></a>
+      <nav id="nav" aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">&#127769;</button>
+      <button id="hamburger" class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero page-hero">
+      <div class="container">
+        <h1>About Me</h1>
+        <h2>Designer, developer and lifelong learner</h2>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container about-grid">
+        <figure class="avatar"><img src="images/avatar.svg" alt="Portrait of Alex Carter"></figure>
+        <article>
+          <h2>Hello, I'm Alex</h2>
+          <p>I'm a front-end developer with six years of experience building websites and web apps for startups and agencies. I care about clean semantic markup, accessible interfaces and smooth, purposeful motion.</p>
+          <p>When I'm not coding, you'll find me sketching UI ideas, reading about typography or exploring new hiking trails.</p>
+          <a href="contact.html" class="btn">Get In Touch</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container">
+        <h2 class="section-title">My Skills</h2>
+        <p class="section-sub">Tools and technologies I use every day.</p>
+        <div class="skills">
+          <article class="skill"><strong>HTML5 &amp; Semantic Markup</strong><div class="bar"><span style="width:95%"></span></div></article>
+          <article class="skill"><strong>CSS (Flexbox, Grid)</strong><div class="bar"><span style="width:90%"></span></div></article>
+          <article class="skill"><strong>JavaScript (ES6+)</strong><div class="bar"><span style="width:85%"></span></div></article>
+          <article class="skill"><strong>Responsive Design</strong><div class="bar"><span style="width:92%"></span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Task 5: Grid gallery with hover zoom -->
+    <section class="section" id="gallery">
+      <div class="container">
+        <h2 class="section-title">Photo Gallery</h2>
+        <p class="section-sub">A few moments and inspirations. Hover over an image to zoom.</p>
+        <div class="gallery">
+          <figure><img src="images/gallery1.svg" alt="Mountain sunrise illustration"></figure>
+          <figure><img src="images/gallery2.svg" alt="Ocean waves illustration"></figure>
+          <figure><img src="images/gallery3.svg" alt="Forest trail illustration"></figure>
+          <figure><img src="images/gallery4.svg" alt="City skyline illustration"></figure>
+          <figure><img src="images/gallery5.svg" alt="Desert dunes illustration"></figure>
+          <figure><img src="images/gallery6.svg" alt="Night sky illustration"></figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <button id="backToTop" aria-label="Back to top">&#8593;</button>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>&copy; 2026 Alex Carter. All rights reserved.</p>
+      <div class="social">
+        <a href="https://github.com" aria-label="GitHub" target="_blank" rel="noopener">Gh</a>
+        <a href="https://linkedin.com" aria-label="LinkedIn" target="_blank" rel="noopener">in</a>
+        <a href="https://twitter.com" aria-label="Twitter" target="_blank" rel="noopener">X</a>
+        <a href="https://instagram.com" aria-label="Instagram" target="_blank" rel="noopener">Ig</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

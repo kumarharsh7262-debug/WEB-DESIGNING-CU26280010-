@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Alex Carter Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">Alex<span>.dev</span></a>
+      <nav id="nav" aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">&#127769;</button>
+      <button id="hamburger" class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero page-hero">
+      <div class="container">
+        <h1>My Projects</h1>
+        <h2>A selection of recent work</h2>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <!-- Task 19: Search filter -->
+        <div class="search-bar">
+          <input type="search" id="projectSearch" placeholder="Search projects by name, tech or keyword..." aria-label="Search projects">
+        </div>
+
+        <div class="card-grid" id="projectGrid">
+          <article class="card">
+            <img src="images/project1.svg" alt="E-commerce store preview">
+            <div class="card-body">
+              <h3>ShopEase Store</h3>
+              <p>A responsive e-commerce storefront with cart and product filters.</p>
+              <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+            </div>
+          </article>
+          <article class="card">
+            <img src="images/project2.svg" alt="Weather app preview">
+            <div class="card-body">
+              <h3>SkyCast Weather</h3>
+              <p>Live weather dashboard that fetches forecasts from a public API.</p>
+              <div class="tags"><span class="tag">API</span><span class="tag">JavaScript</span><span class="tag">Charts</span></div>
+            </div>
+          </article>
+          <article class="card">
+            <img src="images/project3.svg" alt="Task manager preview">
+            <div class="card-body">
+              <h3>TaskFlow Manager</h3>
+              <p>Kanban-style task manager with drag and drop and local storage.</p>
+              <div class="tags"><span class="tag">React</span><span class="tag">Drag &amp; Drop</span></div>
+            </div>
+          </article>
+          <article class="card">
+            <img src="images/project4.svg" alt="Blog platform preview">
+            <div class="card-body">
+              <h3>Inkwell Blog</h3>
+              <p>Minimal blogging platform with markdown support and dark mode.</p>
+              <div class="tags"><span class="tag">Markdown</span><span class="tag">CSS</span><span class="tag">Node</span></div>
+            </div>
+          </article>
+          <article class="card">
+            <img src="images/project5.svg" alt="Fitness tracker preview">
+            <div class="card-body">
+              <h3>FitTrack Dashboard</h3>
+              <p>Fitness tracking dashboard with progress charts and goal setting.</p>
+              <div class="tags"><span class="tag">Charts</span><span class="tag">Grid</span><span class="tag">JavaScript</span></div>
+            </div>
+          </article>
+          <article class="card">
+            <img src="images/project6.svg" alt="Travel landing page preview">
+            <div class="card-body">
+              <h3>Wanderlust Travel</h3>
+              <p>Immersive travel landing page with parallax hero and photo gallery.</p>
+              <div class="tags"><span class="tag">HTML</span><span class="tag">Flexbox</span><span class="tag">Animation</span></div>
+            </div>
+          </article>
+        </div>
+        <p class="no-results" id="noResults">No projects match your search.</p>
+      </div>
+    </section>
+  </main>
+
+  <button id="backToTop" aria-label="Back to top">&#8593;</button>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>&copy; 2026 Alex Carter. All rights reserved.</p>
+      <div class="social">
+        <a href="https://github.com" aria-label="GitHub" target="_blank" rel="noopener">Gh</a>
+        <a href="https://linkedin.com" aria-label="LinkedIn" target="_blank" rel="noopener">in</a>
+        <a href="https://twitter.com" aria-label="Twitter" target="_blank" rel="noopener">X</a>
+        <a href="https://instagram.com" aria-label="Instagram" target="_blank" rel="noopener">Ig</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
