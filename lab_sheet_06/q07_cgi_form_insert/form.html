@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Add User</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 380px;
+      margin: 40px auto
+    }
+
+    input,
+    button {
+      width: 100%;
+      padding: 8px;
+      margin: 6px 0;
+      box-sizing: border-box
+    }
+
+    button {
+      background: #1976d2;
+      color: #fff;
+      border: 0;
+      cursor: pointer
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Add User</h2>
+  <!-- Adjust the action to wherever submit.py is served from -->
+  <form action="/cgi-bin/submit.py" method="post">
+    <input name="name" placeholder="Full name" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <input type="number" name="age" placeholder="Age" min="1" max="120">
+    <input name="city" placeholder="City">
+    <button type="submit">Submit</button>
+  </form>
+</body>
+
+</html>
